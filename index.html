@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NASA Orrery - Near-Earth Objects 3D</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>NASA Orrery: Near-Earth Objects 3D Visualizer</h1>
+    </header>
+
+    <main>
+        <section id="controls">
+            <h2>Select Date to View NEOs</h2>
+            <input type="date" id="datePicker" value="2023-09-18">
+            <button id="fetchDataBtn">Fetch NEO Data</button>
+        </section>
+
+        <section id="visualization">
+            <h2>Orbital Visualization (3D)</h2>
+            <div id="3d-container"></div>
+        </section>
+
+        <section id="neoInfo">
+            <h2>NEO Information</h2>
+            <div id="neoDetails"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>NASA Hackathon Project by [Your Team]</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
